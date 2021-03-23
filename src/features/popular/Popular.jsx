@@ -21,7 +21,7 @@ const Popular = () => {
     }, [currentPage])
 
     const onPageChanged = (pageNumber) => {
-        popularActions.setCurrentPage(pageNumber);
+        dispatch(popularActions.setCurrentPage(pageNumber));
         getResults(currentPage);
     }
 

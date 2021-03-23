@@ -1,20 +1,14 @@
 import {MovieDBApi} from "../../../api/movieDBApi";
 
-
-// ==========Action Creators======================
-
-export const popularActions = {
+export const topRatedActions = {
     setResults: (results) => ( { type: "SET_RESULTS", results } ),
     setCurrentPage: (currentPage) => ( { type: "SET_CURRENT_PAGE", currentPage } )
 }
 
 
-
-// ==========Thunk Creators======================
-
 export const getResults = (results) => (dispatch) => {
-    MovieDBApi.getPopular (results)
+    MovieDBApi.getTopRated (results)
         .then (response => {
-            dispatch(popularActions.setResults (response.data.results));
+            dispatch (topRatedActions.setResults (response.data.results))
         })
 }
