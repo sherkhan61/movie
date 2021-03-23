@@ -1,0 +1,1 @@
+{"version":3,"sources":["features/popular/Popular.jsx"],"names":["Popular"],"mappings":"gGAAA,uBAUeA,UAPC,WACZ,OACI","file":"static/js/3.87173a7b.chunk.js","sourcesContent":["import React from \"react\";\r\n\r\n\r\nconst Popular = () => {\r\n    return (\r\n        <>\r\n        </>\r\n    )\r\n}\r\n\r\nexport default Popular"],"sourceRoot":""}
