@@ -10,7 +10,7 @@ const Header = () => {
         <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
             <div className="container">
                 <div className = {s.logo}>
-                    <NavLink to = "/movieapp">
+                    <NavLink to = "/movie">
                         <img src = {logo} />
                     </NavLink>
                 </div>

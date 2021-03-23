@@ -5,13 +5,9 @@ import Home from "./features/home/Home";
 import Block from "./features/block/Block";
 
 
-const TopRated = lazy(() => import("./features/topRated/TopRated").then(({TopRated}) => (
-    {default: TopRated}
-)));
+const TopRated = lazy(() => import("./features/topRated/TopRated"));
 
-const Popular = lazy(() => import("./features/popular/Popular").then(({Popular}) => (
-    {default: Popular}
-)));
+const Popular = lazy(() => import("./features/popular/Popular"));
 
 
 
@@ -20,11 +16,19 @@ export const Routes = () => {
 
     return <Suspense fallback={<Preloader/>}>
         <Switch>
-            <Route path = "/movieblock/:movieId" render = { () => <Block /> } />
+            <Route path = "/movieblock/:movieId" >
+                <Block />
+            </Route>
             <div className="container">
-                <Route path = "/movieapp" render = { () => <Home /> } />
-                <Route path = "/popular" render = { () => <Popular /> } />
-                <Route path = "/toprated" render = { () => <TopRated /> } />
+                <Route path = "/movie" >
+                    <Home />
+                </Route>
+                <Route path = "/popular" >
+                    <Popular />
+                </Route>
+                <Route path = "/toprated" >
+                    <TopRated />
+                </Route>
             </div>
         </Switch>
     </Suspense>
