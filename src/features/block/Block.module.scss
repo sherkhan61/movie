@@ -1,0 +1,114 @@
+.row {
+  display: flex;
+  justify-content: space-around;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.text__block {
+  padding-left: 45px;
+}
+
+.info {
+  max-width: 1200px;
+  margin: 0 auto;
+  box-shadow: 0px 4px 8px rgba(190, 193, 224, 0.320039);
+  width: 450px;
+  height: 250px;
+}
+
+.title {
+  font-size: 75px;
+  z-index: 2;
+  position: relative;
+  text-align: center;
+  padding-top: 100px;
+  color: #fff;
+}
+
+.text {
+  padding-top: 15px;
+  z-index: 2;
+  position: relative;
+  color: #fff;
+  font-size: 20px;
+  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.bg {
+  position: relative;
+}
+
+.bg:after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  position: absolute;
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+}
+
+.genres {
+  text-align: center;
+  padding-top: 20px;
+}
+
+.date {
+  text-align: center;
+  padding-top: 20px;
+}
+
+.runtime {
+  text-align: center;
+  padding-top: 20px;
+}
+
+.info__title {
+  text-align: center;
+  padding-top: 25px;
+  font-size: 35px;
+}
+
+.img_element {
+  max-width: 400px;
+}
+
+.img__row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 55px;
+}
+
+@media (max-width: 768px) {
+  .trailer {
+    display: none;
+  }
+  .info {
+    max-width: 300px;
+  }
+  .img_element {
+    padding-top: 10px;
+  }
+  .text {
+    max-width: 500px;
+  }
+}
+
+@media (max-width: 500px) {
+  .img_element{
+    max-width: 315px;
+  }
+  .title {
+    font-size: 40px;
+  }
+  .text {
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 18px;
+  }
+}

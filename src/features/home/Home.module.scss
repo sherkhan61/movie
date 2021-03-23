@@ -1,0 +1,68 @@
+.poster {
+  max-width: 1250px;
+}
+
+.main {
+  margin: auto;
+}
+
+.home__main__title {
+  text-align: center;
+  font-size: 45px;
+  margin-top: 25px;
+  margin-bottom: 20px;
+}
+
+.carousel__row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.item {
+  position: relative;
+  margin-top: 100px;
+}
+
+.item:after {
+  position: absolute;
+  content: "";
+  background-color: black;
+  opacity: 0.4;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+
+.title {
+  font-size: 55px;
+}
+
+.card__row {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card__title {
+  max-width: 300px;
+  font-size: 17px;
+}
+
+
+@media (max-width: 1024px) {
+  .card__row {
+    flex-direction: column;
+    align-items: center;
+  }
+  .card {
+    margin-top: 35px;
+  }
+}

@@ -2,12 +2,16 @@
   "name": "movie",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://sherkhan61.github.io/movie",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
     "axios": "^0.21.1",
+    "bootstrap": "^4.6.0",
+    "jquery": "^3.6.0",
     "react": "^17.0.1",
+    "react-bootstrap": "^1.5.2",
     "react-dom": "^17.0.1",
     "react-elastic-carousel": "^0.11.2",
     "react-player": "^2.9.0",
@@ -16,13 +20,16 @@
     "react-scripts": "4.0.3",
     "redux": "^4.0.5",
     "redux-thunk": "^2.3.0",
-    "sass": "^1.32.8"
+    "sass": "^1.32.8",
+    "use-react-router": "^1.0.7"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [

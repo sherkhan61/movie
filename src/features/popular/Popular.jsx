@@ -1,11 +1,11 @@
 import React from "react";
 
 
-const Footer = () => {
+const Popular = () => {
     return (
         <>
         </>
     )
 }
 
-export default Footer
+export default Popular

@@ -10,7 +10,7 @@ const Header = () => {
         <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
             <div className="container">
                 <div className = {s.logo}>
-                    <NavLink to = {"/movieapp"}>
+                    <NavLink to = "/movieapp">
                         <img src = {logo} />
                     </NavLink>
                 </div>
@@ -27,50 +27,15 @@ const Header = () => {
                 <div className="collapse navbar-collapse" id="navbarTogglerDemo02">
                     <ul className="navbar-nav">
                         <li className="nav-item">
-                            <NavLink className = {s.link} to = {"/toprated"} >Top Rated</NavLink>
+                            <NavLink className = {s.link} to = "/toprated" >Top Rated</NavLink>
                         </li>
                         <li className="nav-item">
-                            <NavLink className = {s.link} to = {"/popular"} >Popular</NavLink>
+                            <NavLink className = {s.link} to = "/popular" >Popular</NavLink>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
-
-
-        /*<div className = {s.row} >
-            <div className = {s.title} >
-                <NavLink to = {"/movieapp"} className = {s.title} >
-                    <img src = {logo} />
-                </NavLink>
-            </div>
-            <div>
-                <NavLink to = "/search" >
-                    <img src = {searchIcon} />
-                </NavLink>
-            </div>
-            <div className = {s.link__row} >
-                <div>
-                    <NavLink className = {s.link} to = {"/toprated"} >Top Rated</NavLink>
-                </div>
-                <div>
-                    <NavLink className = {s.link} to = {"/popular"} >Popular</NavLink>
-                </div>
-            </div>
-            <div className = {s.drop__down} >
-                <div className="dropdown">
-                    <button className="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Menu
-                    </button>
-                    <div className="dropdown-menu" aria-labelledby="dropdownMenuButton" >
-                        <NavLink to = {"/toprated"} className="dropdown-item">Top Rated</NavLink>
-                        <NavLink to = {"/popular"} className="dropdown-item">Popular</NavLink>
-                    </div>
-                </div>
-            </div>
-        </div>*/
-
-
     )
 }
 

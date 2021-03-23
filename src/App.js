@@ -1,9 +1,8 @@
 import React from "react";
-import './App.scss';
-
-import {Header} from "./ui";
 import {BrowserRouter} from "react-router-dom";
-
+import {Footer, Header} from "./ui";
+import {Routes} from "./Routes";
+import './App.scss';
 
 
 function App() {
@@ -11,8 +10,9 @@ function App() {
         <>
             <BrowserRouter>
                 <Header/>
+                <Routes/>
+                <Footer/>
             </BrowserRouter>
-
         </>
     );
 }
